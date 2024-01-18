@@ -1,14 +1,23 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('Home')
+    context = {
+        'title': 'Home'
+    }
+    return render(request, 'home.html', context)
 
 
 def contact(request):
-    return HttpResponse('Contact')
+    context = {
+        'title': 'Contato'
+    }
+    return render(request, 'contact.html', context)
 
 
 def about(request):
-    return HttpResponse('About')
+    context = {
+        'title': 'Sobre'
+    }
+    return render(request, 'about.html', context)
