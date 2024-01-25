@@ -1,9 +1,9 @@
 from django.urls import path
 
-from recipes.views import home, contact, about
+from recipes import views
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('contact', contact, name='contact'),
-    path('about', about, name='about')
+    path('', views.home, name='home'),
+    path('recipe/<int:id>', views.recipe, name='recipe'),
+    path('about', views.about, name='about'),
 ]

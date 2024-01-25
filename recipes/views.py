@@ -10,11 +10,11 @@ def home(request):
     return render(request, 'pages/home.html', context)
 
 
-def contact(request):
+def recipe(request, id):
     context = {
-        'title': 'Contato'
+        'title': 'Recipe'
     }
-    return render(request, 'pages/contact.html', context)
+    return render(request, 'pages/recipe.html', context)
 
 
 def about(request):
