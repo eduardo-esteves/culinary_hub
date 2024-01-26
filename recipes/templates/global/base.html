@@ -23,10 +23,9 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <title>Recipes</title>
-
 </head>
-
 <body>
+
     <header class="main-header-container">
         <div class="main-header container">
             <h1>
@@ -37,3 +36,28 @@
             </h1>
         </div>
     </header>
+
+    <div class="search-container">
+        <div class="container">
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="search">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    {% block 'content' %}
+    {% endblock 'content' %}
+
+    <footer class="main-footer">
+        <div class="developer">
+            <a href="#" target="_blank" rel="noreferrer noopener">© Copyright Recipe</a>
+        </div>
+
+        <div class="powered">
+            <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer noopener">Powered by Django</a>
+        </div>
+    </footer>
+
+    </body>
+</html>
