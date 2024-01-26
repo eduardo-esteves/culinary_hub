@@ -4,21 +4,13 @@ from django.shortcuts import render
 
 def home(request):
     context = {
-        'h1': 'Recipes',
-        'title': 'Home'
+        'title': 'Home',
     }
     return render(request, 'pages/home.html', context)
 
 
 def recipe(request, id):
     context = {
-        'title': 'Recipe'
+        'title': 'Recipe',
     }
     return render(request, 'pages/recipe.html', context)
-
-
-def about(request):
-    context = {
-        'title': 'Sobre'
-    }
-    return render(request, 'pages/about.html', context)

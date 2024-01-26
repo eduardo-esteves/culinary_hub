@@ -1,6 +1,7 @@
-{% include '_parts/header.html' %}
+{% extends 'global/base.html' %}
 
-    {% include '_parts/search.html' %}
+
+{% block 'content' %}
 
     <main class="main-content-container">
         <div class="main-content main-content-list container">
@@ -15,4 +16,4 @@
         </div>
     </main>
 
-{% include '_parts/footer.html' %}
+{% endblock 'content' %}
