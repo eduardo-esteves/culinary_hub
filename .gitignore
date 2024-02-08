@@ -101,7 +101,7 @@ ENV/
 sftp-config.json
 
 # Added by me
-/database-django-fusion
+/culinary_hub.sqlite3
 docker-compose.yml
 /backup
 /media/*

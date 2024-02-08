@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'django_core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'culinary_hub.sqlite3',
     }
 }
 
