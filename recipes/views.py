@@ -13,6 +13,15 @@ def home(request):
     return render(request, 'pages/home.html', context)
 
 
+def category(request, category_id):
+    recipes = Recipe.objects.filter(category__id=category_id)
+    context = {
+        'title': 'Home',
+        'recipes': recipes,
+    }
+    return render(request, 'pages/category.html', context)
+
+
 def recipe(request, id):
     context = {
         'title': 'Recipe',
